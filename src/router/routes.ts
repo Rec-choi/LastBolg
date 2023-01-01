@@ -3,6 +3,7 @@ import generatedRoutes from 'virtual:generated-pages'
 import type { RouteRecordRaw } from 'vue-router'
 import MultilevelMenuExample from './modules/multilevel.menu.example'
 import BreadcrumbExample from './modules/breadcrumb.example'
+import EcologyExample from './modules/ecology.example'
 import type { Route } from '#/global'
 import useSettingsStore from '@/store/modules/settings'
 
@@ -79,12 +80,21 @@ const systemRoutes: RouteRecordRaw[] = [
 const asyncRoutes: Route.recordMainRaw[] = [
   {
     meta: {
-      title: '演示',
+      title: '数据',
       icon: 'sidebar-default',
     },
     children: [
       MultilevelMenuExample,
       BreadcrumbExample,
+    ],
+  },
+  {
+    meta: {
+      title: '其它',
+      icon: 'sidebar-ecology',
+    },
+    children: [
+      ...EcologyExample,
     ],
   },
 ]

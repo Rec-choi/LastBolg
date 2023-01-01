@@ -1,3 +1,11 @@
+/*
+ * @Author: “Rec-choi” “1820758693@qq.com”
+ * @Date: 2022-12-29 02:15:18
+ * @LastEditors: “Rec-choi” “1820758693@qq.com”
+ * @LastEditTime: 2022-12-31 22:17:23
+ * @FilePath: \KAUNGJIA\src\router\modules\multilevel.menu.example.ts
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 import type { RouteRecordRaw } from 'vue-router'
 
 const Layout = () => import('@/layouts/index.vue')
@@ -8,7 +16,7 @@ const routes: RouteRecordRaw = {
   redirect: '/multilevel_menu_example/page',
   name: 'multilevelMenuExample',
   meta: {
-    title: '多级导航',
+    title: '信息',
     icon: 'sidebar-menu',
   },
   children: [
@@ -17,7 +25,7 @@ const routes: RouteRecordRaw = {
       name: 'multilevelMenuExample1',
       component: () => import('@/views/multilevel_menu_example/page.vue'),
       meta: {
-        title: '导航1',
+        title: '信息提交',
       },
     },
     {
@@ -25,7 +33,7 @@ const routes: RouteRecordRaw = {
       name: 'multilevelMenuExample2',
       redirect: '/multilevel_menu_example/level2/page',
       meta: {
-        title: '导航2',
+        title: '内容变更',
       },
       children: [
         {
@@ -33,34 +41,8 @@ const routes: RouteRecordRaw = {
           name: 'multilevelMenuExample2-1',
           component: () => import('@/views/multilevel_menu_example/level2/page.vue'),
           meta: {
-            title: '导航2-1',
+            title: '内容上传',
           },
-        },
-        {
-          path: 'level3',
-          name: 'multilevelMenuExample2-2',
-          redirect: '/multilevel_menu_example/level2/level3/page1',
-          meta: {
-            title: '导航2-2',
-          },
-          children: [
-            {
-              path: 'page1',
-              name: 'multilevelMenuExample2-2-1',
-              component: () => import('@/views/multilevel_menu_example/level2/level3/page1.vue'),
-              meta: {
-                title: '导航2-2-1',
-              },
-            },
-            {
-              path: 'page2',
-              name: 'multilevelMenuExample2-2-2',
-              component: () => import('@/views/multilevel_menu_example/level2/level3/page2.vue'),
-              meta: {
-                title: '导航2-2-2',
-              },
-            },
-          ],
         },
       ],
     },
