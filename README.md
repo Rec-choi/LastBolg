@@ -2,7 +2,7 @@
  * @Author: “Rec-choi” “1820758693@qq.com”
  * @Date: 2022-12-29 02:15:18
  * @LastEditors: “Rec-choi” “1820758693@qq.com”
- * @LastEditTime: 2023-01-02 18:24:41
+ * @LastEditTime: 2023-01-03 03:06:36
  * @FilePath: \KAUNGJIA\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -29,4 +29,5 @@
 ## 支持
 
 如果觉得不错，希望可以在 **Github** 或者 **Gitee(码云)** 帮我点个 ⭐ 。
-<a href="https://gitee.com/rechoi/bolg" target="_blank">gitee</a>
+<a href="https://gitee.com/rechoi/bolg.git" target="_blank">gitee</a>
+<a href="https://github.com/Rec-choi/LastBolg.git" target="_blank">github</a>
