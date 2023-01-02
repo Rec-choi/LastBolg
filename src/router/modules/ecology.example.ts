@@ -2,7 +2,7 @@
  * @Author: “Rec-choi” “1820758693@qq.com”
  * @Date: 2023-01-01 00:33:16
  * @LastEditors: “Rec-choi” “1820758693@qq.com”
- * @LastEditTime: 2023-01-01 00:45:19
+ * @LastEditTime: 2023-01-03 02:02:52
  * @FilePath: \KAUNGJIA\src\router\modules\ecology.example.ts
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -35,25 +35,6 @@ const routes: RouteRecordRaw[] = [
         meta: {
           title: 'One-step-admin 干啥都快人一步的中后台框架',
           link: 'https://hooray.gitee.io/one-step-admin/',
-        },
-      },
-    ],
-  },
-  {
-    path: '/cooperation',
-    redirect: '/cooperation/vform',
-    meta: {
-      title: '战略合作',
-      icon: 'sidebar-cooperation',
-    },
-    children: [
-      {
-        path: 'vform',
-        redirect: '',
-        name: 'cooperationVform',
-        meta: {
-          title: 'VForm 低代码表单',
-          link: 'https://www.vform666.com',
         },
       },
     ],

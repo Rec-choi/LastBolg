@@ -21,8 +21,10 @@
     "@tinymce/tinymce-vue": "^5.0.0",
     "@vueuse/core": "^9.9.0",
     "@vueuse/integrations": "^9.9.0",
+    "@yyr1994/h-charts": "^0.1.9",
     "axios": "^1.2.1",
     "dayjs": "^1.11.7",
+    "echarts": "^5.4.1",
     "element-plus": "^2.2.27",
     "hotkeys-js": "^3.10.1",
     "lodash-es": "^4.17.21",
@@ -35,6 +37,7 @@
     "qs": "^6.11.0",
     "tinymce": "^6.3.1",
     "vue": "^3.2.45",
+    "vue-echarts": "^6.5.0",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {

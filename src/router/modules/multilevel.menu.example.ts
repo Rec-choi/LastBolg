@@ -2,7 +2,7 @@
  * @Author: “Rec-choi” “1820758693@qq.com”
  * @Date: 2022-12-29 02:15:18
  * @LastEditors: “Rec-choi” “1820758693@qq.com”
- * @LastEditTime: 2022-12-31 22:17:23
+ * @LastEditTime: 2023-01-03 01:59:06
  * @FilePath: \KAUNGJIA\src\router\modules\multilevel.menu.example.ts
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -29,11 +29,19 @@ const routes: RouteRecordRaw = {
       },
     },
     {
+      path: 'page2',
+      name: 'mbatchactionbar',
+      component: () => import('@/views/multilevel_menu_example/batchactionbar.demo.vue'),
+      meta: {
+        title: '用户信息',
+      },
+    },
+    {
       path: 'level2',
       name: 'multilevelMenuExample2',
       redirect: '/multilevel_menu_example/level2/page',
       meta: {
-        title: '内容变更',
+        title: '文件变更',
       },
       children: [
         {

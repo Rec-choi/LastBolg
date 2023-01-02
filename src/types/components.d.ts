@@ -17,6 +17,7 @@ declare module '@vue/runtime-core' {
     ImagePreview: typeof import('./../components/ImagePreview/index.vue')['default']
     ImagesUpload: typeof import('./../components/ImagesUpload/index.vue')['default']
     ImageUpload: typeof import('./../components/ImageUpload/index.vue')['default']
+    MyEcharts: typeof import('./../components/MyEcharts/MyEcharts.vue')['default']
     PageHeader: typeof import('./../components/PageHeader/index.vue')['default']
     PageMain: typeof import('./../components/PageMain/index.vue')['default']
     PcasCascader: typeof import('./../components/PcasCascader/index.vue')['default']
