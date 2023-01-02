@@ -2,7 +2,7 @@
  * @Author: “Rec-choi” “1820758693@qq.com”
  * @Date: 2022-12-29 02:15:18
  * @LastEditors: “Rec-choi” “1820758693@qq.com”
- * @LastEditTime: 2023-01-03 01:59:06
+ * @LastEditTime: 2023-01-03 04:19:15
  * @FilePath: \KAUNGJIA\src\router\modules\multilevel.menu.example.ts
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -34,6 +34,14 @@ const routes: RouteRecordRaw = {
       component: () => import('@/views/multilevel_menu_example/batchactionbar.demo.vue'),
       meta: {
         title: '用户信息',
+      },
+    },
+    {
+      path: 'page3',
+      name: 'dataLast',
+      component: () => import('@/views/multilevel_menu_example/dataLast.vue'),
+      meta: {
+        title: '后台数据',
       },
     },
     {
